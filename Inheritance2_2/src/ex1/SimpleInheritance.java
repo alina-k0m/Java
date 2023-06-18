@@ -3,9 +3,9 @@ package ex1;
 public class SimpleInheritance {
     public static void main(String args[]) {
         Animal animalOb = new Animal();
-        Elephant elephantOb = new Elephant();
+        Elephant elephantOb = new Elephant(); //вызыываем конструктор
 //суперкласс может использоваться самостоятельно
-        animalOb.name = "Собака";
+        animalOb.name = "Собака"; //создаем объекты
         animalOb.vegetarian = false;
         animalOb.eats = "мясо";
         animalOb.numberOfLegs = 4;

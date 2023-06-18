@@ -2,11 +2,11 @@ package ex1;
 
 public class Elephant extends Animal {
     int numberOfTusks;
-    public Elephant () {super("", false, 4);}
+    public Elephant () {super("", false, 4);} //конструктор, который обращается к классу на 1 ступень выше (class Animal)
 
     public Elephant(String eats, boolean vegetarian, int numberOfLegs) {
         super(eats, vegetarian, numberOfLegs);
-        this.numberOfTusks = 0;
+        this.numberOfTusks = 0; //перегрузка конструктора
     }
 
     public Elephant(String eats, boolean vegetarian, int numberOfLegs, int numberOfTusks) {
@@ -22,7 +22,7 @@ public class Elephant extends Animal {
         this.numberOfTusks = numberOfTusks;
     }
 
-    void showAllData() {
+    void showAllData() { //переопределяем метод
         super.showAllData();
         System.out.println(", количество бивней: "+numberOfTusks);
     }
