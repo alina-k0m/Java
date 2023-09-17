@@ -14,5 +14,6 @@ class OnlyExt implements FilenameFilter {
     public boolean accept(File dir, String name) {
         return name.toLowerCase().endsWith(ext);
     }
+//boolean accept(File dir, String name) - фильтрация фаайлов по именам
 }
 

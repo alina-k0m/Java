@@ -9,7 +9,7 @@ class DirListOnly {
         String dirname = "E:\\ALINA\\PICTURES\\Пейзажи";
         File f1 = new File(dirname);
         FilenameFilter only = new OnlyExt("jpg");
-        String s[] = f1.list(only);
+        String s[] = f1.list(only); //если нет only, выводится все в папке
         for (int i = 0; i < s.length; i++)
             System.out.println(s[i]);
     }
